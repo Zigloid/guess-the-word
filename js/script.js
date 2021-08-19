@@ -14,7 +14,7 @@ const guessedLetters = [];
 const placeholder = function (word) {
   const placeholderLetters = [];
   for (const letter of word) {
-    console.log(letter);
+
     placeholderLetters.push("●");
   }
   wordInProgress.innerText = placeholderLetters.join("");
@@ -33,9 +33,9 @@ guessLetterButton.addEventListener("click", function (e) {
 
   if (goodGuess) {
       // We've got a letter! Let's guess!
-      MakeGuess(guess);
+      makeGuess(guess);
   }
-  console.log(guess);
+  
   letterInput.value = "";
 });
 const validateInput = function (input) {
