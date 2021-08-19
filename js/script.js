@@ -65,3 +65,4 @@ const makeGuess = function (guess) {
         console.log(guessedLetters);
     }
 };
+
